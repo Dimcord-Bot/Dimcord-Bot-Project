@@ -2,6 +2,7 @@ const Discord = require('discord.js')
 require('dotenv').config()
 const client =  new Discord.Client({intents: 32767})
 const fs = require('fs')
+const loadFeatures = require("./Features/Features.js")
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -57,5 +58,7 @@ const handle = new Errorhandler(client, {
   process.on('unhandledRejection', error => {
     handle.createrr(client, undefined, undefined, error)
   })
+
+loadFeatures(client)
 
 client.login(process.env.DISCORD_TOKEN)
