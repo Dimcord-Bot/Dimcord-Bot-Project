@@ -16,9 +16,6 @@ client.on('messageCreate', async message => {
     if(content.startsWith('salken semua')){
     message.channel.send(`Salam kenal juga ${message.author}!`)
     }
-    if(content.endsWith('salam')){
-    message.channel.send(`Salam kenal juga ${message.author}!`)
-    }
     if(content.endsWith('salken')){
     message.channel.send(`Salam kenal juga ${message.author}!`)
     }
