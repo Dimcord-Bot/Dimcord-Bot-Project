@@ -7,9 +7,6 @@ client.on('messageCreate', async message => {
     if(content.includes('salam kenal')){
     message.channel.send(`Salam kenal juga ${message.author}!`)
     }
-    if(content.includes('salam')){
-    message.channel.send(`Salam kenal juga ${message.author}!`)
-    }
     if(content.includes('assalamualaikum')){
     message.channel.send(`Waalaikumsalam ${message.author}`)
     }
